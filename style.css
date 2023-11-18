@@ -2,7 +2,9 @@ p{
     margin: 0px;
 }
 
-
+select{
+    background-color: none;
+}
 
 .ChangeRole, .DeleteRole,
 .StudentsList, .Rasp{
