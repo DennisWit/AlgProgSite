@@ -48,10 +48,20 @@ p{
 
 .column{
     margin-top: 150px;
-    max-width: 550px;
+    max-width: 400px;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 20px 5px;
+    gap: 40px 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column_left{
+    align-items: center;
+}
+
+.column_right{
+    align-items: center;
 }
 
 .DeleteRole{
