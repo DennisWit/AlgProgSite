@@ -1,0 +1,129 @@
+p{
+    margin: 0px;
+}
+
+
+
+.ChangeRole, .DeleteRole,
+.StudentsList, .Rasp{
+    background-color: #B20036;
+    color: #fff;
+    width: 400px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    align-items: center;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+.ChangeRole:hover{
+    background-color: #131313;
+    transition: 0.3s;
+}
+
+.DeleteRole:hover{
+    background-color: #131313;
+    transition: 0.3s;
+}
+
+.StudentsList:hover{
+    background-color: #131313;
+    transition: 0.3s;
+}
+
+.Rasp:hover{
+    background-color: #131313;
+    transition: 0.3s;
+}
+
+.container{
+    max-width: 1180px;
+    padding: 0 10px ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    margin-top: 150px;
+    max-width: 550px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px 5px;
+}
+
+.DeleteRole{
+    margin-top: 25px;
+}
+
+.Rasp{
+    margin-top: 25px;
+}
+
+.panel {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: #131313;
+    background-color: none;
+    display: none;
+    overflow: hidden;
+    max-width: 400px;
+    margin: 10px 0;
+    border-radius: 30px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+
+.input{
+    padding: 0px 40px 20px 40px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px #131313;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.accept{
+    width: 400px;
+    height: 70px;
+    background-color: #131313;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.accept__text{
+    max-width: 274px;
+    height: 28px;
+    color: #fff;
+    letter-spacing: 22px;
+    padding-left: 22px;
+    font-size: 22px;
+}
+
+.form__rasp{
+    max-width: 400px;
+    border-radius: 50px;
+}
+
+.input__file{
+    margin: 20px 0px 48px 0px;
+    font-size: 20px;
+}
+
+.accept__input__file{
+    width: 400px;
+    height: 70px;
+    background-color: #131313;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    letter-spacing: 22px;
+    font-size: 22px;
+}

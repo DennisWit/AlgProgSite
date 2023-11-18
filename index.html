@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Server</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column column_left">
+            <button class="ChangeRole"><span>Изменить роль пользователя</span></button>
+            <form class="panel">
+                <input class="input" type="text" placeholder="ID пользователя">
+                <input class="input" type="text" placeholder="Выберите роль">
+                <button class="accept"><span class="accept__text">Изменить</span></button>
+            </form>
+            <button class="DeleteRole"><span>Удалить роль пользователя</span></button>
+            <form class="panel">
+                <input class="input" type="text" placeholder="ID пользователя">
+                <button class="accept"><span class="accept__text">Удалить</span></button>
+            </form>
+        </div>
+        <div class="column column_right">
+            <button class="StudentsList"><span>Вывести список учеников</span></button>
+            <button class="Rasp"><span>Обновить расписание</span></button>
+            <div class="panel">
+                <form class="form__rasp" enctype="multipart/form-data" method="post">
+                    <p>
+                    <input class="input__file" type="file" name="f">
+                    <input class="accept__input__file" type="submit" value="Отправить">
+                    </p>
+                </form> 
+            </div>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
