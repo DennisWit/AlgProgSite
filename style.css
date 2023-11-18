@@ -49,11 +49,9 @@ p{
 .column{
     margin-top: 150px;
     max-width: 400px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 40px 50px;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
 }
 
 .column_left{
@@ -88,7 +86,8 @@ p{
 
 
 .input{
-    padding: 0px 40px 20px 40px;
+    padding-left: 40px;
+    padding-bottom: 15px;
     width: 100%;
     border: none;
     border-bottom: 1px #131313;
@@ -103,7 +102,7 @@ p{
     background-color: #131313;
     border-radius: 50px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-bottom: 50px;
 }
 
@@ -149,3 +148,123 @@ input[type=file]::file-selector-button {
     cursor: pointer;
     transition: background 0.3s ease-in-out;
   }
+
+@media (max-width: 900px){
+    .ChangeRole, .DeleteRole,
+    .StudentsList, .Rasp{
+        width: 100%;
+        height: 55px;
+    }
+
+    .column{
+        max-width: 300px;
+    }
+
+    .panel{
+        max-width: 300px;
+    }
+
+    .accept{
+        max-width: 100%;
+        height: 55px;
+    }
+
+    .accept__text{
+        letter-spacing: 16px;
+    }
+
+    .form__rasp{
+        max-width: 300px;
+    }
+
+    .input__file{
+        max-width: 100%;
+    }
+
+    .accept__input__file{
+        max-width: 100%;
+        height: 55px;
+        letter-spacing: 16px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .column{
+        margin-top: 40px;
+    }
+
+    .ChangeRole{
+        margin-bottom: 15px;
+    }
+
+    .StudentsList{
+        margin-bottom: 15px;
+    }
+
+    .accept{
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+
+    .input{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 450px){
+    span{
+        font-size: 16px;
+    }
+
+    option{
+        font-size: 16px;
+    }
+
+    .ChangeRole, .DeleteRole,
+    .StudentsList, .Rasp{
+        width: 100%;
+        height: 50px;
+    }
+
+    .column{
+        max-width: 260px;
+    }
+
+    .panel{
+        max-width: 260px;
+        font-size: 16px;
+    }
+
+    .accept{
+        max-width: 100%;
+        height: 50px;
+    }
+
+    .accept__text{
+        letter-spacing: 16px;
+        font-size: 16px;
+    }
+
+    .form__rasp{
+        max-width: 260px;
+    }
+
+    .input__file{
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .accept__input__file{
+        max-width: 100%;
+        height: 55px;
+        letter-spacing: 14px;
+        font-size: 16px;
+        padding-left: 22px;
+    }
+}
