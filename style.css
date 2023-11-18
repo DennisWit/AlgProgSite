@@ -94,6 +94,7 @@ p{
     border-bottom: 1px #131313;
     text-decoration: underline;
     font-size: 20px;
+    outline: none;
 }
 
 .accept{
@@ -137,3 +138,15 @@ p{
     letter-spacing: 22px;
     font-size: 22px;
 }
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+
