@@ -13,7 +13,12 @@
             <button class="ChangeRole"><span>Изменить роль пользователя</span></button>
             <form class="panel">
                 <input class="input" type="text" placeholder="ID пользователя">
-                <input class="input" type="text" placeholder="Выберите роль">
+                <select class="input" name="option">
+                    <option value="" disabled selected>Выберите роль</option>
+                    <option value="1">Студент</option>
+                    <option value="2">Преподаватель</option>
+                    <option value="3">Админ</option>
+                  </select>
                 <button class="accept"><span class="accept__text">Изменить</span></button>
             </form>
             <button class="DeleteRole"><span>Удалить роль пользователя</span></button>
