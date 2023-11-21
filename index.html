@@ -12,20 +12,23 @@
             <div class="column_left">
             <button class="ChangeRole"><span>Изменить роль пользователя</span></button>
             <form class="panel">
-                <input class="input" type="text" placeholder="ID пользователя">
+                <div class="input__class">
+                <input class="input input_id_user" type="text" placeholder="ID пользователя">
                 <select class="input" name="option">
                     <option value="" disabled selected>Выберите роль</option>
                     <option value="1">Студент</option>
                     <option value="2">Преподаватель</option>
                     <option value="3">Админ</option>
-                    <option value="4">Бан</option>
                   </select>
+                </div>
                 <button class="accept"><span class="accept__text">Изменить</span></button>
             </form>
-            <button class="DeleteRole"><span>Удалить роль пользователя</span></button>
+            <button class="DeleteRole"><span>Забанить пользователя</span></button>
             <form class="panel">
+                <div class="input__class">
                 <input class="input" type="text" placeholder="ID пользователя">
-                <button class="accept"><span class="accept__text">Удалить</span></button>
+                </div>
+                <button class="accept"><span class="accept__text">Забанить</span></button>
             </form>
             </div>
         </div>
