@@ -2,8 +2,9 @@ p{
     margin: 0px;
 }
 
-select{
+select.input{
     background-color: none;
+    width: 260px;
 }
 
 .ChangeRole, .DeleteRole,
@@ -66,6 +67,7 @@ select{
 
 .DeleteRole{
     margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 .Rasp{
@@ -73,29 +75,33 @@ select{
 }
 
 .panel {
-    padding-top: 18px;
-    padding-bottom: 18px;
     color: #131313;
     background-color: none;
     display: none;
     overflow: hidden;
-    max-width: 400px;
-    margin: 10px 0;
-    border-radius: 30px;
+    max-width: 420px;
+    margin: 20px 0;
     font-size: 25px;
-    text-align: center;
   }
 
-
 .input{
-    padding-left: 40px;
-    padding-bottom: 15px;
-    width: 100%;
+    width: 260px;
     border: none;
-    border-bottom: 1px #131313;
     text-decoration: underline;
     font-size: 20px;
     outline: none;
+    background-color: transparent;
+    padding: 0px 0px 15px 0px;
+}
+
+.input__class{
+    border: 2px solid #084cdf;
+    border-radius: 30px;
+    width: 390px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .accept{
@@ -104,7 +110,7 @@ select{
     background-color: #131313;
     border-radius: 50px;
     cursor: pointer;
-    margin-top: 14px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -123,7 +129,7 @@ select{
 }
 
 .input__file{
-    margin: 20px 0px 48px 0px;
+    margin: 20px 0px 34px 0px;
     font-size: 20px;
 }
 
@@ -152,6 +158,10 @@ input[type=file]::file-selector-button {
   }
 
 @media (max-width: 900px){
+    select.input{
+        width: 224px;
+    }
+
     .ChangeRole, .DeleteRole,
     .StudentsList, .Rasp{
         width: 100%;
@@ -164,6 +174,14 @@ input[type=file]::file-selector-button {
 
     .panel{
         max-width: 300px;
+    }
+
+    .input__class{
+        width: 270px;
+    }
+
+    .input{
+        width: 220px;
     }
 
     .accept{
@@ -191,6 +209,11 @@ input[type=file]::file-selector-button {
 }
 
 @media (max-width: 750px) {
+    select.input{
+        background-color: none;
+        width: 180px;
+    }
+
     .container{
         display: flex;
         flex-direction: column;
@@ -216,6 +239,12 @@ input[type=file]::file-selector-button {
 
     .input{
         font-size: 16px;
+        padding-bottom: 5px;
+        width: 180px;
+    }
+
+    .input__class{
+        width: 230px;
     }
 }
 
@@ -246,6 +275,7 @@ input[type=file]::file-selector-button {
     .accept{
         max-width: 100%;
         height: 50px;
+        margin-top: 35px;
     }
 
     .accept__text{
@@ -260,6 +290,10 @@ input[type=file]::file-selector-button {
     .input__file{
         max-width: 100%;
         font-size: 16px;
+    }
+
+    .input_id_user{
+        padding-bottom: 15px;
     }
 
     .accept__input__file{
